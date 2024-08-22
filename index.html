@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .even :nth-child(even){
+            background-color:#f0d9b5
+
+
+        }
+        .even :nth-child(odd){
+            background-color: #b58863;
+        }
+        .odd :nth-child(odd){
+            background-color:#f0d9b5
+
+        }
+        .odd :nth-child(even){
+            background-color:#b58863
+        }
+        td{
+            width: 70px;
+            height: 70px;
+            font-size: 3rem;
+            text-align: center;
+            
+           
+        }
+        div{
+           margin-left: 300px;
+        
+            
+        
+        
+            
+            
+        }
+        body{
+            overflow: hidden;
+        }
+table{
+    border-collapse: collapse;
+    box-shadow: 0 0 10px ;
+
+}
+
+
+span{
+    color:black;
+    
+}
+main{
+    color: white;
+}
+#moving{
+   background-color:lightblue;
+   border: 1px solid lightblue ;
+
+box-shadow: 2px 2px 10px;
+
+   
+}
+#previous{
+    background-color: lightblue;
+   border: 1px solid lightblue ;
+
+   box-shadow: 2px 2px 10px;
+}
+article{
+    position: absolute;
+    right:254px;
+    top: 200px;
+
+    font-size: 4rem;
+
+}
+p{
+    position: absolute;
+    right:250px;
+    top: 260px;
+    background-color: RED;
+}
+
+        
+    </style>
+</head>
+<body>
+    
+    <div>
+   
+    <table border="1">
+        <tr class="row_1 odd">
+            <td ><span>♜</span></td>
+            <td ><span style="background-color: #b58863;">♞</span></td>
+            <td ><span>♝</span></td>
+            <td id="previous"></td>
+            <td><span>♚</span></td>
+            <td><span style="background-color: #b58863;">♝</span></td>
+            <td><span>♞</span></td>
+            <td><span style="background-color: #b58863;">♜</span></td>
+        </tr>
+        <tr class="row_2 even" >
+            <td><span>♟</span></td>
+            <td></td>
+            <td><span>♟</span></td>
+            <td><span style=" background-color:#f0d9b5">♟</span></td>
+            <td></td>
+            <td><span style=" background-color:#f0d9b5" >♟</span></td>
+            <td><span>♟</span></td>
+            <td></td>
+            
+        </tr>
+        <tr class="row_3 odd" >
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span>♟</span></td>
+            <td id="moving"><span style="background-color: lightblue;">♛</span></td>
+            <td></td>
+            <td><span style=" background-color:#b58863">♟</span></td>
+
+        </tr>
+
+        <tr class="row_4 even">
+            <td></td>
+            <td><main style="background-color: #f0d9b5;">♟</main></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td ><main></main></td>
+            <td></td>
+
+        </tr>
+
+        <tr class="row_5 odd">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td ><main>♟</main>
+            </td>
+            <td></td>
+
+        </tr>
+
+        <tr class="row_6 even">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><main style="background-color: #f0d9b5">♞</main></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+
+        <tr class="row_7 odd">
+            <td><main>♟</main></td>
+            <td><main style=" background-color:#b58863">♟</main></td>
+            <td></td>
+            <td><main style=" background-color:#b58863">♟</main></td>
+            <td><main>♟</main></td>
+             <td><main style=" background-color:#b58863" >♟</main></td>
+            <td></td>
+            <td><main style=" background-color:#b58863">♟</main></td>
+           
+        </tr>
+        <tr class="row_8 even" >
+            <td ><main>♜</main></td>
+            <td ><main style="background-color: #f0d9b5;">♞</main></td>
+            <td ><main>♝</main></td>
+            <td><main style="background-color: #f0d9b5;">♛</main></td>
+            <td><main>♚</main></td>
+            <td><main style="background-color: #f0d9b5;">♝</main></td>
+            <td></td>
+            <td><main style="background-color: #f0d9b5;">♜</main></td>
+
+        </tr>
+    </div>
+    <article>♟</article>
+    <P>Pawn Died</P>
+    
+
+    </table>
+</body>
+</html>
+
